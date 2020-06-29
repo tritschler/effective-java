@@ -1,7 +1,7 @@
 package com.tritschler.java.objects.creation;
 
 /**
- * Item 1 : consider using static factory methods
+ * Item 1 : consider using static factory methods (instead of constructors)
  * Abstract:
  *
  *
@@ -17,8 +17,6 @@ public class StaticFactory {}
 
 
 class Car {
-
-
 
     // from
     public static Car from(String carType) {
