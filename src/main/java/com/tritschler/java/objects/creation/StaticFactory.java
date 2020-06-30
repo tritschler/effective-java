@@ -18,12 +18,22 @@ public class StaticFactory {}
 
 class Car {
 
+    private static Car INSTANCE = new Car();
+
     // from
     public static Car from(String carType) {
+
         return new Car();
     }
+
     // of
+    public static Car of() {
+        return new Car();
+    }
 
     // getInstance
+    public static Car getInstance() {
+        return INSTANCE;
+    }
 
 }
